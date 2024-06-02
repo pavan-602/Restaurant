@@ -519,9 +519,26 @@ body.nav-active { overflow: hidden; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: max-content;
+  width: max-content;
 }
 
+.dd{
+  color: var(--gold-crayola);
+}
 
+.gh{
+  display:block;
+}
+
+.reservation{
+  position: relative;
+  
+}
+.form-left .reservation{
+  position: relative;
+  
+}
 
 /*-----------------------------------*\
   #PRELOAD
