@@ -168,3 +168,30 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+
+
+
+
+// my edits
+
+ // Get today's date in YYYY-MM-DD format
+ var today = new Date().toISOString().split('T')[0];
+ // Set the min attribute of the date input to today's date
+ document.getElementById('reservation-date').setAttribute('min', today);
+
+
+ function padZero(num) {
+  return num < 10 ? '0' + num : num;
+}
+
+function setMinTime() {
+  const now = new Date();
+  const hours = padZero(now.getHours());
+  const minutes = padZero(now.getMinutes());
+  const currentTime = `₹ {hours}:₹ {minutes}`;
+
+  document.getElementById('reservation-time').setAttribute('min', currentTime);
+}
+
+setMinTime();
